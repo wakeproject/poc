@@ -30,8 +30,8 @@ importScripts('/poc/orbits/javascripts/geometry/vector3.js');
     var v = Math.sqrt(G * (m1 + m2) / (x1 - x2)),
         v1 = m2 / (m1 + m2) * v,
         v2 = - m1 / (m1 + m2) * v;
-    var vx1 = v1, vy1 = 0;
-    var vx2 = v2, vy2 = 0;
+    var vx1 = 0, vy1 = v1;
+    var vx2 = 0, vy2 = v2;
     var vx3 = Math.sqrt(G * (m1 + m2) / y3), vy3 = 0;
 
     //Initial direction unit vector
