@@ -1,0 +1,58 @@
+* {
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+#orb {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 512px;
+    height: 512px;
+    overflow: hidden;
+    background-color: black;
+}
+
+#map-dn {
+    position: absolute;
+    top: 10px;
+    left: 532px;
+    width: 640px;
+    height: 512px;
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+#lum {
+    position: absolute;
+    top: 532px;
+    left: 10px;
+    width: 1165px;
+    height: 80px;
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+#ind-time {
+    position: absolute;
+    top: 10px;
+    left: 1200px;
+    width: 200px;
+    height: 60px;
+}
+
+#ind-msg {
+    position: absolute;
+    top: 150px;
+    left: 1200px;
+    width: 200px;
+    height: 60px;
+}
+

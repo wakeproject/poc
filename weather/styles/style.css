@@ -1,0 +1,104 @@
+* {
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+#orb {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 512px;
+    height: 512px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.map {
+    position: absolute;
+    top: 10px;
+    left: 532px;
+    width: 640px;
+    height: 512px;
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+.vmap {
+    position: absolute;
+    top: 0px;
+    width: 180px;
+    height: 512px;
+    overflow: hidden;
+    background-color: gray;
+}
+
+#vmap-vpr {
+    left: 0px;
+}
+
+#vmap-vatp {
+    left: 213px;
+}
+
+#vmap-vdnst {
+    left: 426px;
+}
+
+#lum {
+    position: absolute;
+    top: 532px;
+    left: 532px;
+    width: 640px;
+    height: 80px;
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+#map-selector {
+    position: absolute;
+    top: 10px;
+    left: 1200px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+#ind-sea {
+    position: absolute;
+    top: 532px;
+    left: 532px;
+    width: 512px;
+    height: 300px;
+}
+
+#ind-continent {
+    position: absolute;
+    top: 532px;
+    left: 10px;
+    width: 512px;
+    height: 300px;
+}
+
+#ind-time {
+    position: absolute;
+    top: 532px;
+    left: 1150px;
+    width: 200px;
+    height: 60px;
+}
+
+#ind-msg {
+    position: absolute;
+    top: 620px;
+    left: 1150px;
+    width: 200px;
+    height: 50px;
+}
+

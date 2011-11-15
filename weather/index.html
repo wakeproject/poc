@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles/style.css" type="text/css" media="screen" />
+  <script src="/poc/weather/javascripts/jquery.js"></script>
+  <script src="/poc/weather/javascripts/viewer/orbit.js"></script>
+  <!--script src="/poc/weather/javascripts/viewer/luminosity.js"></script-->
+  <script src="/poc/weather/javascripts/geometry/scale.js"></script>
+  <script src="/poc/weather/javascripts/functional/grayscale.js"></script>
+  <script src="/poc/weather/javascripts/functional/walsh.js"></script>
+  <script src="/poc/weather/javascripts/viewer/daynight.js"></script>
+  <script src="/poc/weather/javascripts/viewer/land-temperature.js"></script>
+  <script src="/poc/weather/javascripts/viewer/air-temperature.js"></script>
+  <script src="/poc/weather/javascripts/viewer/pressure.js"></script>
+  <script src="/poc/weather/javascripts/viewer/windx.js"></script>
+  <script src="/poc/weather/javascripts/viewer/windy.js"></script>
+  <script src="/poc/weather/javascripts/viewer/windz.js"></script>
+  <script src="/poc/weather/javascripts/viewer/density.js"></script>
+  <script src="/poc/weather/javascripts/viewer/verticle-air-temperature.js"></script>
+  <script src="/poc/weather/javascripts/viewer/verticle-pressure.js"></script>
+  <script src="/poc/weather/javascripts/viewer/verticle-density.js"></script>
+  <script src="/poc/weather/javascripts/viewers.js"></script>
+  <title>Simulator</title>
+</head>
+<body>
+<canvas id="orb"></canvas>
+<canvas id="map-dn" class="map"></canvas>
+<canvas id="map-ltp" class="map"></canvas>
+<canvas id="map-atp" class="map"></canvas>
+<canvas id="map-pr" class="map"></canvas>
+<canvas id="map-wdx" class="map"></canvas>
+<canvas id="map-wdy" class="map"></canvas>
+<canvas id="map-wdz" class="map"></canvas>
+<canvas id="map-dnst" class="map"></canvas>
+<canvas id="grs-atp" class="map"></canvas>
+<canvas id="grs-wdx" class="map"></canvas>
+<canvas id="grs-wdy" class="map"></canvas>
+<div id="map-verticle" class="map">
+    <canvas id="vmap-vatp" class="vmap"></canvas>
+    <canvas id="vmap-vpr" class="vmap"></canvas>
+    <canvas id="vmap-vdnst" class="vmap"></canvas>
+</div>
+<div id="map-selector">
+<ul>
+<li id="slc-dn">day and night</li>
+<li id="slc-ltp">land temperature</li>
+<li id="slc-atp">air temperature</li>
+<li id="slc-pr">pressure</li>
+<li id="slc-wdx">wind x</li>
+<li id="slc-wdy">wind y</li>
+<li id="slc-wdz">wind z</li>
+<li id="slc-dnst">density</li>
+<li id="slc-vert">verticle</li>
+</ul>
+</div>
+<div id="ind-msg">Message:<div id="msg"></div></div>
+<div id="ind-time">
+    <ul>Time
+      <li>Local Day:  <span id="lday"></span></li>
+      <li>Factor:  <span id="factor"></span></li>
+    </ul>
+</div>
+<div id="ind-continent">
+    <ul>Continent
+      <li>Temperature:  <span id="ltp2"></span></li>
+      <li>Air Temperature:  <span id="atp2"></span></li>
+      <li>Pressure:  <span id="prs2"></span></li>
+      <li>Density:  <span id="dnst2"></span></li>
+      <li>Wind x:  <span id="wdx2"></span></li>
+      <li>Wind y:  <span id="wdy2"></span></li>
+      <li>Wind z:  <span id="wdz2"></span></li>
+    </ul>
+</div>
+<div id="ind-sea">
+    <ul>Sea
+      <li>Temperature:  <span id="ltp1"></span></li>
+      <li>Air Temperature:  <span id="atp1"></span></li>
+      <li>Pressure:  <span id="prs1"></span></li>
+      <li>Density:  <span id="dnst1"></span></li>
+      <li>Wind x:  <span id="wdx1"></span></li>
+      <li>Wind y:  <span id="wdy1"></span></li>
+      <li>Wind z:  <span id="wdz1"></span></li>
+    </ul>
+</div>
+</body>
+</html>

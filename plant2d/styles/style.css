@@ -1,0 +1,20 @@
+* {
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+#painting {
+    position: absolute;
+    width: 960px;
+    height: 640px;
+    overflow: hidden;
+    background-color: lightgray;
+}
+

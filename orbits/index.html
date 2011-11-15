@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles/style.css" type="text/css" media="screen" />
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/viewer/orbit.js"></script>
+  <script src="javascripts/viewer/luminosity.js"></script>
+  <script src="javascripts/geometry/scale.js"></script>
+  <script src="javascripts/viewer/daynight.js"></script>
+  <script src="javascripts/viewers.js"></script>
+  <title>Simulator</title>
+</head>
+<body>
+<canvas id="orb"></canvas>
+<canvas id="map-dn"></canvas>
+<canvas id="lum"></canvas>
+<div id="ind-time">
+    <ul>
+      <li>Local Year:  <span id="lyear"></span></li>
+      <li>Local Day:  <span id="lday"></span></li>
+      <li>Factor:  <span id="factor"></span></li>
+      <li>Energy:  <span id="energy"></span></li>
+    </ul>
+</div>
+<div id="ind-msg">Message:<div id="msg"></div></div>
+</body>
+</html>
